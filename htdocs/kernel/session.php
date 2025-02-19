@@ -84,7 +84,7 @@ class XoopsSessionHandler implements SessionHandlerInterface
         $secure = (XOOPS_PROT === 'https://');
         if (PHP_VERSION_ID >= 70300) {
             $options = [
-                'lifetime' => $lifetime,
+                'lifetime' => 0,
                 'path'     => '/',
                 'domain'   => XOOPS_COOKIE_DOMAIN,
                 'secure'   => $secure,
